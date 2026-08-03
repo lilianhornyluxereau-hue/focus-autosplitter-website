@@ -1,0 +1,270 @@
+/* ================================= */
+/*      FOCUS AUTOSPLITTER HELP      */
+/* ================================= */
+
+/* Conteneur général */
+
+.install-container {
+  width: 90%;
+
+  max-width: 950px;
+
+  margin: 50px auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  position: relative;
+}
+
+/* Ligne entre les étapes */
+
+.install-container::before {
+  content: "";
+
+  position: absolute;
+
+  top: 70px;
+
+  bottom: 70px;
+
+  width: 3px;
+
+  background: linear-gradient(#8b5cf6, transparent);
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  opacity: 0.5;
+}
+
+/* Carte étape */
+
+.install-step {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 35px;
+
+  margin-bottom: 45px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border-radius: 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  position: relative;
+
+  z-index: 2;
+
+  opacity: 0;
+
+  transform: translateY(50px);
+
+  animation: appearStep 0.8s ease forwards;
+
+  transition: 0.35s ease;
+}
+
+.install-step:hover {
+  transform: translateY(-8px) scale(1.02);
+
+  background: rgba(255, 255, 255, 0.12);
+
+  box-shadow: 0 15px 45px rgba(139, 92, 246, 0.35);
+}
+
+/* Numéro */
+
+.step-number {
+  width: 75px;
+
+  height: 75px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+
+  font-size: 30px;
+
+  font-weight: bold;
+
+  color: white;
+
+  background: linear-gradient(135deg, #7c3aed, #c084fc);
+
+  box-shadow: 0 0 25px rgba(192, 132, 252, 0.7);
+
+  animation: pulseNumber 2.5s infinite;
+}
+
+/* Contenu */
+
+.step-content {
+  width: 100%;
+}
+
+.step-content h2 {
+  margin-top: 0;
+
+  color: #d8b4fe;
+
+  font-size: 28px;
+}
+
+.step-content h3 {
+  color: #c084fc;
+
+  margin-top: 30px;
+}
+
+.step-content p {
+  line-height: 1.7;
+}
+
+.step-content ol,
+.step-content ul {
+  text-align: left;
+
+  display: inline-block;
+
+  line-height: 1.8;
+}
+
+/* Bloc code */
+
+.step-content code {
+  display: inline-block;
+
+  padding: 12px 20px;
+
+  margin: 15px;
+
+  border-radius: 12px;
+
+  background: #111827;
+
+  color: #e9d5ff;
+
+  font-family: Consolas, monospace;
+
+  font-size: 15px;
+
+  box-shadow: inset 0 0 10px rgba(139, 92, 246, 0.25);
+}
+
+/* Statut connecté */
+
+.success {
+  color: #4ade80;
+
+  font-weight: bold;
+
+  font-size: 20px;
+}
+
+/* Cartes aide */
+
+.help-card {
+  width: 90%;
+
+  max-width: 950px;
+
+  margin: 40px auto;
+
+  padding: 35px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border-radius: 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  animation: fadeIn 0.8s ease;
+}
+
+.help-card h2 {
+  color: #d8b4fe;
+
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+/* Animations */
+
+@keyframes appearStep {
+  from {
+    opacity: 0;
+
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseNumber {
+  0% {
+    box-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 45px rgba(192, 132, 252, 0.9);
+  }
+
+  100% {
+    box-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .install-container::before {
+    display: none;
+  }
+
+  .install-step {
+    padding: 25px;
+  }
+
+  .step-content h2 {
+    font-size: 23px;
+  }
+
+  .help-card {
+    padding: 25px;
+  }
+}
