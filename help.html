@@ -1,111 +1,197 @@
-<div class="help-card">
-  <h2>🚀 Installation de Focus Autosplitter</h2>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
 
-  <div class="help-step">
-    <h3>1. Télécharger Focus Autosplitter</h3>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <p>
-      Téléchargez la dernière version depuis la page
-      <b>Téléchargement</b>.
-    </p>
+    <title>Aide - Focus Autosplitter</title>
 
-    <p>Lancez ensuite :</p>
+    <link rel="stylesheet" href="CSS/style.css" />
 
-    <code> Focus-Autosplitter-Setup.exe </code>
+    <link rel="stylesheet" href="CSS/help.css" />
+  </head>
 
-    <p>Suivez les étapes de l'installation puis lancez le logiciel.</p>
-  </div>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/icon.png" alt="Focus Autosplitter" />
 
-  <div class="help-step">
-    <h3>2. Installer LiveSplit</h3>
+        <span>Focus Autosplitter</span>
+      </div>
 
-    <p>Focus Autosplitter nécessite LiveSplit pour fonctionner.</p>
+      <nav>
+        <a href="index.html">Accueil</a>
 
-    <p>Téléchargez la dernière version officielle :</p>
+        <a href="download.html">Télécharger</a>
 
-    <a
-      class="button"
-      href="https://github.com/LiveSplit/LiveSplit/releases/latest"
-      target="_blank"
-    >
-      ⏱ Télécharger LiveSplit
-    </a>
+        <a href="help.html">Aide</a>
 
-    <p>
-      1. Téléchargez l'archive ZIP.<br /><br />
+        <a href="forum.html">Forum</a>
+      </nav>
+    </header>
 
-      2. Extrayez son contenu dans le dossier de votre choix.<br /><br />
+    <section class="hero">
+      <div>
+        <h1>📖 Centre d'aide</h1>
 
-      3. Lancez :
-    </p>
+        <h2>Installation et configuration</h2>
 
-    <code> LiveSplit.exe </code>
+        <p>
+          Retrouvez toutes les informations nécessaires pour configurer Focus
+          Autosplitter.
+        </p>
+      </div>
+    </section>
 
-    <p>
-      💡 LiveSplit est portable : aucune installation Windows n'est nécessaire.
-    </p>
-  </div>
+    <section class="help-card">
+      <h2>🚀 Installation de Focus Autosplitter</h2>
 
-  <div class="help-step">
-    <h3>3. Activer LiveSplit Server</h3>
+      <div class="help-step">
+        <h3>1. Télécharger Focus Autosplitter</h3>
 
-    <p>
-      Les versions récentes de LiveSplit intègrent déjà LiveSplit Server. Aucun
-      téléchargement supplémentaire n'est nécessaire.
-    </p>
+        <p>Téléchargez la dernière version depuis la page téléchargement.</p>
 
-    <p>Pour l'activer :</p>
+        <p>Lancez ensuite :</p>
 
-    <ol>
-      <li>Ouvrez <b>LiveSplit</b>.</li>
+        <code> Focus-Autosplitter-Setup.exe </code>
 
-      <li>Faites un clic droit sur le timer.</li>
+        <p>Suivez les étapes d'installation puis lancez le logiciel.</p>
+      </div>
 
-      <li>Allez dans <b>Control</b>.</li>
+      <div class="help-step">
+        <h3>2. Installer LiveSplit</h3>
 
-      <li>Cliquez sur <b>Start TCP Server</b>.</li>
-    </ol>
+        <p>Focus Autosplitter utilise LiveSplit pour gérer votre timer.</p>
 
-    <p>Le serveur utilise par défaut le port :</p>
+        <a
+          class="button"
+          href="https://github.com/LiveSplit/LiveSplit/releases/latest"
+          target="_blank"
+        >
+          ⏱ Télécharger LiveSplit
+        </a>
 
-    <code> 16834 </code>
-  </div>
+        <p>
+          1. Téléchargez l'archive ZIP.<br /><br />
 
-  <div class="help-step">
-    <h3>4. Connecter Focus Autosplitter</h3>
+          2. Extrayez son contenu dans un dossier.<br /><br />
 
-    <ol>
-      <li>Lancez Focus Autosplitter.</li>
+          3. Lancez :
+        </p>
 
-      <li>Ouvrez les paramètres.</li>
+        <code> LiveSplit.exe </code>
 
-      <li>Vérifiez que le port LiveSplit est :</li>
-    </ol>
+        <p>
+          💡 LiveSplit est portable, aucune installation Windows n'est
+          nécessaire.
+        </p>
+      </div>
 
-    <code> 16834 </code>
+      <div class="help-step">
+        <h3>3. Activer LiveSplit Server</h3>
 
-    <p>Cliquez ensuite sur :</p>
+        <p>
+          Les versions récentes de LiveSplit intègrent déjà LiveSplit Server.
+          Aucun téléchargement supplémentaire n'est nécessaire.
+        </p>
 
-    <button class="fake-button">🔗 Connecter</button>
+        <p>Pour l'activer :</p>
 
-    <p>Le statut doit passer en :</p>
+        <ol>
+          <li>Ouvrez <b>LiveSplit</b>.</li>
 
-    <p class="success">🟢 LiveSplit : Connecté</p>
-  </div>
+          <li>Faites un clic droit sur le timer.</li>
 
-  <div class="help-step">
-    <h3>✅ Vérification finale</h3>
+          <li>Cliquez sur <b>Control</b>.</li>
 
-    <ul>
-      <li>Focus Autosplitter est ouvert.</li>
+          <li>Cliquez sur <b>Start TCP Server</b>.</li>
+        </ol>
 
-      <li>LiveSplit est ouvert.</li>
+        <p>Le port utilisé est :</p>
 
-      <li>Start TCP Server est activé.</li>
+        <code> 16834 </code>
+      </div>
 
-      <li>Le statut affiche Connecté.</li>
+      <div class="help-step">
+        <h3>4. Connecter Focus Autosplitter</h3>
 
-      <li>Votre jeu est sélectionné.</li>
-    </ul>
-  </div>
-</div>
+        <ol>
+          <li>Lancez Focus Autosplitter.</li>
+
+          <li>Ouvrez les paramètres.</li>
+
+          <li>Vérifiez le port LiveSplit.</li>
+        </ol>
+
+        <code> 16834 </code>
+
+        <p>Cliquez ensuite sur le bouton connexion.</p>
+
+        <p class="success">🟢 LiveSplit : Connecté</p>
+      </div>
+    </section>
+
+    <section class="help-card">
+      <h2>🎮 Configuration des jeux</h2>
+
+      <div class="help-step">
+        <h3>🍄 Super Mario Odyssey</h3>
+
+        <p>
+          Sélectionnez la fenêtre du jeu et vérifiez que l'aperçu fonctionne.
+        </p>
+      </div>
+
+      <div class="help-step">
+        <h3>🏔 Celeste</h3>
+
+        <p>Sélectionnez Celeste.exe dans Focus Autosplitter.</p>
+      </div>
+
+      <div class="help-step">
+        <h3>🗡 Zelda BOTW</h3>
+
+        <p>
+          Sélectionnez votre émulateur puis vérifiez la connexion LiveSplit.
+        </p>
+      </div>
+    </section>
+
+    <section class="help-card">
+      <h2>❓ Questions fréquentes</h2>
+
+      <div class="help-step">
+        <h3>Le jeu n'est pas détecté</h3>
+
+        <p>Vérifiez que la bonne fenêtre est sélectionnée.</p>
+      </div>
+
+      <div class="help-step">
+        <h3>LiveSplit reste déconnecté</h3>
+
+        <p>
+          Vérifiez que Start TCP Server est activé et que le port est 16834.
+        </p>
+      </div>
+
+      <div class="help-step">
+        <h3>L'aperçu est noir</h3>
+
+        <p>Essayez de relancer le jeu ou Focus Autosplitter.</p>
+      </div>
+    </section>
+
+    <section class="help-card">
+      <h2>💬 Besoin d'aide ?</h2>
+
+      <p>Un problème ? Venez demander de l'aide sur le forum.</p>
+
+      <a class="button" href="forum.html"> Accéder au forum </a>
+    </section>
+
+    <footer>© 2026 Focus Autosplitter</footer>
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>
